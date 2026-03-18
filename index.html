@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suheil Vargas | People Operating System for Scowtt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        h1, h2, h3, .brand { font-family: 'Urbanist', sans-serif; }
+        .bg-slate-950 { background-color: #020617; }
+        .accent-gold { color: #eab308; }
+        .bg-accent-gold { background-color: #eab308; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .roadmap-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .bot-bubble { animation: fadeInUp 0.5s ease forwards; opacity: 0; }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .loading-shimmer {
+            background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 antialiased font-light">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="brand text-2xl font-bold tracking-tighter uppercase">SV <span class="accent-gold">x</span> SCOWTT</div>
+        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+            <a href="#experience" class="hover:text-yellow-500 transition">Experience</a>
+            <a href="#philosophy" class="hover:text-yellow-500 transition">Philosophy</a>
+            <a href="#ai-lab" class="hover:text-yellow-500 transition">AI Lab</a>
+            <a href="#90day" class="hover:text-yellow-500 transition">Roadmap</a>
+            <a href="#contact" class="px-4 py-2 bg-accent-gold text-slate-950 rounded-full hover:scale-105 transition">Let's Build</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[95vh] flex items-center justify-center pt-32 pb-20 px-6 overflow-hidden text-center">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-500 rounded-full filter blur-[120px] animate-pulse"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-[120px] animate-pulse delay-1000"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl">
+            <h1 class="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+                Architecting the <span class="accent-gold">People Operating System</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                Fractional HR Leadership for Scowtt. Bridging 15+ years of enterprise rigor with the scrappy, AI-driven automation of a Series A scale-up.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+                <a href="#90day" class="px-8 py-4 bg-accent-gold text-slate-950 font-bold rounded-xl text-lg hover:shadow-2xl hover:shadow-yellow-500/20 transition-all w-full md:w-auto">90-Day Strategic Plan</a>
+                <a href="#philosophy" class="px-8 py-4 glass text-white font-bold rounded-xl text-lg hover:bg-white/10 transition-all w-full md:w-auto">My Philosophy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Context Section -->
+    <section id="scowtt" class="py-24 px-6 md:px-12 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6 italic text-yellow-500 uppercase tracking-tighter">The Scowtt Opportunity</h2>
+                    <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                        With <span class="text-white font-bold">$12M in Series A funding</span> and leadership led by <span class="text-white font-bold">Eduardo Indacochea</span> (ex-Meta/Google), Scowtt values precision and technical speed.
+                    </p>
+                    <p class="text-lg text-slate-300 leading-relaxed">
+                        I specialize in the **"Zero-to-One"** phase, ensuring your team can grow from 20 to 100+ without the traditional HR bloat. I don't just manage people; I build the technical infrastructure that empowers them.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass p-6 rounded-2xl text-center">
+                        <div class="text-4xl font-bold accent-gold mb-2">Series A</div>
+                        <div class="text-xs uppercase tracking-tighter text-slate-500">Current Phase</div>
+                    </div>
+                    <div class="glass p-6 rounded-2xl text-center">
+                        <div class="text-4xl font-bold text-white mb-2">PST</div>
+                        <div class="text-xs uppercase tracking-tighter text-slate-500">Timezone Sync</div>
+                    </div>
+                    <div class="glass p-6 rounded-2xl text-center">
+                        <div class="text-4xl font-bold text-white mb-2">AI</div>
+                        <div class="text-xs uppercase tracking-tighter text-slate-500">Workflow Ops</div>
+                    </div>
+                    <div class="glass p-6 rounded-2xl text-center">
+                        <div class="text-4xl font-bold accent-gold mb-2">200+</div>
+                        <div class="text-xs uppercase tracking-tighter text-slate-500">Scale Capacity</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-24 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center uppercase tracking-widest"><span class="accent-gold">Proven</span> Benchmarks</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="glass p-8 rounded-3xl roadmap-card border-yellow-500/20">
+                    <i class="fa-solid fa-mug-hot text-3xl accent-gold mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">First HR Hire: Botrista</h3>
+                    <p class="text-slate-400 mb-4">Joined as foundational HR lead for a 50-person tech team. Established all compliant processes, ER protocols, and payroll from a blank slate.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl roadmap-card">
+                    <i class="fa-solid fa-seedling text-3xl accent-gold mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">Stealth & Early Stage</h3>
+                    <p class="text-slate-400 mb-4">Fractional CHRO for early-stage startups (0-25 employees). Standing up foundational ops and preparing founders for Series A/B rounds.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl roadmap-card">
+                    <i class="fa-solid fa-up-right-and-down-left-from-center text-3xl accent-gold mb-6"></i>
+                    <h3 class="text-2xl font-bold mb-4">PMI: US People Ops Reboot</h3>
+                    <p class="text-slate-400 mb-4">Led the US market reboot. Rebuilt recruitment to hire 200 high-quality employees in 3 months, scaling core operations from 50 to 2,000+.</p>
+                </div>
+            </div>
+
+            <!-- Resume List -->
+            <div class="space-y-4">
+                <div class="flex flex-col md:flex-row md:items-center gap-4 p-6 glass rounded-xl border-yellow-500/10">
+                    <span class="text-xl font-bold accent-gold md:w-48 shrink-0">PepsiCo</span>
+                    <div class="text-slate-300">
+                        <span class="block font-semibold text-white">People Operations Leader & Strategic Business Partner</span>
+                        Directed global digital transformations (250k+ employees) and advised SVP/VP-level leadership on workforce planning.
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center gap-4 p-4 glass rounded-xl opacity-60 text-sm">
+                    <span class="font-bold text-slate-400 md:w-48 shrink-0 uppercase tracking-widest">Accenture</span>
+                    <span class="text-slate-400 italic">HR Business Systems Consultant for process automation.</span>
+                </div>
+                <div class="flex flex-col md:flex-row md:items-center gap-4 p-4 glass rounded-xl opacity-40 text-sm">
+                    <span class="font-bold text-slate-400 md:w-48 shrink-0 uppercase tracking-widest">Montefiore</span>
+                    <span class="text-slate-400 italic">Managed SuccessFactors administration and regulatory audits.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW SECTION: Strategic Philosophy / LinkedIn Content -->
+    <section id="philosophy" class="py-24 px-6 md:px-12 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl font-bold mb-6">The <span class="accent-gold">Fractional</span> Philosophy</h2>
+                    <p class="text-lg text-slate-400">My LinkedIn content focuses on bridging the gap between traditional HR and the modern AI-driven workplace. Here is how I think about Scowtt's success.</p>
+                </div>
+                <a href="https://www.linkedin.com/in/suheil-vargas-8435695/" target="_blank" class="flex items-center gap-3 text-yellow-500 font-bold hover:underline">
+                    <i class="fa-brands fa-linkedin text-2xl"></i> Follow My Insights
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Insight 1 -->
+                <div class="p-8 glass rounded-3xl border-white/5 roadmap-card">
+                    <div class="text-xs font-bold uppercase tracking-widest text-yellow-500 mb-4">On AI & Automation</div>
+                    <h4 class="text-xl font-bold mb-4">"HR as a Product, Not a Service"</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"In a Series A environment, every manual HR minute is a minute taken from product development. I build 'People Bots' not to replace humans, but to automate the 'People Debt' that slows startups down."</p>
+                </div>
+                <!-- Insight 2 -->
+                <div class="p-8 glass rounded-3xl border-white/5 roadmap-card">
+                    <div class="text-xs font-bold uppercase tracking-widest text-blue-500 mb-4">On Scaling</div>
+                    <h4 class="text-xl font-bold mb-4">"The 50-to-200 Trap"</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"Scaling isn't just about hiring; it's about systemizing culture. Most startups fail here because their infrastructure is legacy. I implement 'Agile HR' to ensure the team of 200 feels as aligned as the team of 20."</p>
+                </div>
+                <!-- Insight 3 -->
+                <div class="p-8 glass rounded-3xl border-white/5 roadmap-card">
+                    <div class="text-xs font-bold uppercase tracking-widest text-purple-500 mb-4">On Fractional Value</div>
+                    <h4 class="text-xl font-bold mb-4">"Architect over Administrator"</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed italic">"You don't need an HR Manager to handle files; you need an HR Architect to build the engine. Fractional leadership brings enterprise-grade stability without the enterprise-grade overhead."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Lab: The Technical Demo -->
+    <section id="ai-lab" class="py-24 px-6 md:px-12 bg-slate-900/80">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">The <span class="accent-gold">Technical HR</span> Lab</h2>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">Experiencing the "People OS." Test these Gemini-powered tools to see how I automate HR overhead.</p>
+        </div>
+
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+            <!-- Tool 1: Chatbot -->
+            <div class="glass p-8 rounded-3xl flex flex-col h-[500px]">
+                <div class="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                    <i class="fa-solid fa-robot accent-gold"></i>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Live People Bot Demo</span>
+                </div>
+                <div id="chat-messages" class="flex-grow overflow-y-auto space-y-4 mb-4 pr-2 custom-scrollbar">
+                    <div class="flex justify-start">
+                        <div class="glass p-4 rounded-2xl rounded-tl-none text-sm max-w-[80%] flex gap-3">
+                            <div class="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-robot text-[10px] text-slate-950"></i>
+                            </div>
+                            <div>
+                                Hello! I'm the AI People Assistant Suheil would build for Scowtt. Ask me about our 90-day scaling priorities or mock policies.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <input type="text" id="chat-input" placeholder="Ask a question..." class="bg-slate-900 border border-white/10 rounded-xl px-4 py-3 flex-grow focus:border-yellow-500 outline-none transition text-sm">
+                    <button onclick="sendChatMessage()" class="bg-accent-gold text-slate-950 p-3 rounded-xl hover:scale-105 transition">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tool 2: Interview Prep -->
+            <div class="glass p-8 rounded-3xl flex flex-col">
+                <div class="flex items-center gap-3 mb-6 border-b border-white/5 pb-4">
+                    <i class="fa-solid fa-sparkles accent-gold"></i>
+                    <span class="text-xs font-bold uppercase tracking-widest text-slate-500">AI Interview Generator</span>
+                </div>
+                <p class="text-slate-400 mb-6 text-sm">Standardize your high-growth hiring process in seconds. Generate high-signal questions for Scowtt roles.</p>
+                <div class="flex gap-2 mb-6">
+                    <input type="text" id="role-input" placeholder="e.g. Lead Data Engineer" class="bg-slate-900 border border-white/10 rounded-xl px-4 py-3 flex-grow focus:border-yellow-500 outline-none transition text-sm">
+                    <button onclick="generateQuestions()" class="bg-white text-slate-950 font-bold px-6 py-3 rounded-xl hover:scale-105 transition text-sm">Generate</button>
+                </div>
+                <div id="questions-result" class="flex-grow overflow-y-auto custom-scrollbar text-slate-300 text-sm italic leading-relaxed whitespace-pre-line hidden">
+                    <!-- Questions injected here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 90 Day Roadmap -->
+    <section id="90day" class="py-24 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">90-Day Execution <span class="accent-gold">Roadmap</span></h2>
+            <p class="text-center text-slate-400 mb-12 max-w-2xl mx-auto">Phase-based transformation to stabilize, automate, and accelerate Scowtt's workforce.</p>
+
+            <div class="text-center mb-16">
+                <button onclick="generateCustomRoadmap()" class="px-8 py-3 glass border-yellow-500/30 hover:border-yellow-500 text-yellow-500 font-bold rounded-xl transition">✨ Personalize My Roadmap</button>
+            </div>
+
+            <div id="roadmap-display" class="grid md:grid-cols-3 gap-8">
+                <!-- Days 1-30 -->
+                <div class="p-8 glass rounded-2xl roadmap-card">
+                    <div class="bg-accent-gold text-slate-950 font-black text-xs uppercase px-3 py-1 inline-block rounded-full mb-4">Phase 1</div>
+                    <h3 class="text-2xl font-bold mb-4">Stability & Audit</h3>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500 mt-1"></i> <span>Audit <strong>Contractor vs Employee</strong> classifications.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500 mt-1"></i> <span>Sync <strong>Multi-State Payroll</strong> (ADP/Gusto) for remote expansion.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500 mt-1"></i> <span>Align <strong>Eduardo's Vision</strong> with hiring priorities.</span></li>
+                    </ul>
+                </div>
+                <!-- Days 31-60 -->
+                <div class="p-8 glass rounded-2xl roadmap-card">
+                    <div class="bg-blue-500 text-white font-black text-xs uppercase px-3 py-1 inline-block rounded-full mb-4">Phase 2</div>
+                    <h3 class="text-2xl font-bold mb-4">Process & AI Automation</h3>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-blue-500 mt-1"></i> <span>Deploy <strong>"People Bot"</strong> for real-time policy FAQs in Slack.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-blue-500 mt-1"></i> <span>Standardize <strong>Interview Engines</strong> for engineering speed.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-blue-500 mt-1"></i> <span>Automate <strong>Onboarding</strong> document generation via Make.com.</span></li>
+                    </ul>
+                </div>
+                <!-- Days 61-90 -->
+                <div class="p-8 glass rounded-2xl roadmap-card">
+                    <div class="bg-purple-500 text-white font-black text-xs uppercase px-3 py-1 inline-block rounded-full mb-4">Phase 3</div>
+                    <h3 class="text-2xl font-bold mb-4">Culture & Acceleration</h3>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-purple-500 mt-1"></i> <span>Launch <strong>Employer Brand</strong> for Tier-1 AdTech talent.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-purple-500 mt-1"></i> <span>Establish <strong>Lightweight OKRs</strong> for remote performance.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-check text-purple-500 mt-1"></i> <span>Solidify <strong>Stability</strong> for Series B runway.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section id="investment" class="py-24 px-6 md:px-12 bg-slate-900/30">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Partnership & <span class="accent-gold">Investment</span></h2>
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto">Flexible fractional models designed to grow with Scowtt's headcount.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <!-- Build Sprint -->
+                <div class="glass p-10 rounded-3xl border-yellow-500/20 flex flex-col">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold">The Series A Sprint</h3>
+                            <p class="text-slate-400 text-sm mt-1 italic">Foundational Build & Scale</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-3xl font-bold accent-gold">$15K</span>
+                            <span class="text-slate-500 text-sm block">/month</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-slate-300 flex-grow">
+                        <li class="flex gap-3"><i class="fa-solid fa-bolt accent-gold mt-1"></i> <span><strong>High Intensity:</strong> Zero-to-one HR process architecture.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-bolt accent-gold mt-1"></i> <span><strong>AI Deployment:</strong> Building custom automations and "People Bots".</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-bolt accent-gold mt-1"></i> <span><strong>Rapid Scaling:</strong> Managing 50+ hire expansion sprints.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Continuity -->
+                <div class="glass p-10 rounded-3xl border-white/10 flex flex-col">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold">Strategic Continuity</h3>
+                            <p class="text-slate-400 text-sm mt-1 italic">Advisory & Systems Oversight</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-3xl font-bold text-white">$10K</span>
+                            <span class="text-slate-500 text-sm block">/month</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 text-slate-300 flex-grow">
+                        <li class="flex gap-3"><i class="fa-solid fa-shield-check text-slate-500 mt-1"></i> <span><strong>Governance:</strong> Ongoing compliance and high-level ER support.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-chart-line text-slate-500 mt-1"></i> <span><strong>Leadership Coaching:</strong> Strategic advisory for founders & VPs.</span></li>
+                        <li class="flex gap-3"><i class="fa-solid fa-gears text-slate-500 mt-1"></i> <span><strong>System Maintenance:</strong> Oversight of the automated People OS.</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Discovery Note -->
+            <div class="mt-12 p-8 glass rounded-2xl border-white/5 bg-slate-900/40 text-center">
+                <p class="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">Scope & Discovery Note</p>
+                <p class="text-sm text-slate-400 leading-relaxed max-w-3xl mx-auto italic">Fees listed are indicative. Final binding proposals are provided after a discovery session to assess technical debt, HRIS maturity, and headcount velocity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact -->
+    <section id="contact" class="py-24 px-6 md:px-12 text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8 uppercase tracking-tighter">Let's Build <span class="accent-gold">Scowtt</span>.</h2>
+            <p class="text-xl text-slate-400 mb-12">I am available for immediate fractional support with full PST alignment. Let's architect the future together.</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="mailto:suheil.vargas4@outlook.com" class="flex items-center gap-3 px-8 py-4 bg-white text-slate-950 font-bold rounded-2xl hover:scale-105 transition-all">
+                    <i class="fa-solid fa-envelope"></i> suheil.vargas4@outlook.com
+                </a>
+                <a href="tel:7188010475" class="flex items-center gap-3 px-8 py-4 glass text-white font-bold rounded-2xl hover:bg-white/10 transition-all">
+                    <i class="fa-solid fa-phone"></i> (718) 801-0475
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 border-t border-white/5">
+        <p>© 2024 Suheil Vargas | Fractional HR Leader | specialized in 0-1 Scale-Ups</p>
+    </footer>
+
+    <script>
+        const apiKey = ""; // Handled by environment
+        
+        async function callGemini(prompt, retries = 5) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            contents: [{ parts: [{ text: prompt }] }],
+                            systemInstruction: { parts: [{ text: "You are an AI assistant representing Suheil Vargas, a Fractional HR Leader. Your goal is to convince Scowtt's leadership that Suheil is the perfect architect for their growth. You are technical, expert, and efficient. Highlight her success as First HR Hire at Botrista, her US People Ops Reboot at Philip Morris, and her dual-impact career at PepsiCo. NEVER mention specific company names. Use a professional, tech-startup tone. Emphasize her 'Fractional Philosophy' of HR as a Product, not a service." }] }
+                        })
+                    });
+                    
+                    if (!response.ok) throw new Error('API Error');
+                    const data = await response.json();
+                    return data.candidates?.[0]?.content?.parts?.[0]?.text;
+                } catch (err) {
+                    if (i === retries - 1) throw err;
+                    await new Promise(resolve => setTimeout(resolve, Math.pow(2, i) * 1000));
+                }
+            }
+        }
+
+        async function generateQuestions() {
+            const role = document.getElementById('role-input').value;
+            if (!role) return;
+            const res = document.getElementById('questions-result');
+            res.classList.remove('hidden');
+            res.innerHTML = '<div class="loading-shimmer h-24 w-full rounded-xl"></div>';
+
+            const prompt = `Generate 5 high-signal interview questions for "${role}" at Scowtt. Focus on technical skills, startup agility, and culture fit for a Series A AdTech firm. Explain why Suheil's philosophy of 'HR as a Product' informs these specific questions. DO NOT mention company names.`;
+            
+            try {
+                const text = await callGemini(prompt);
+                res.innerHTML = text;
+            } catch (e) {
+                res.innerHTML = "Error generating questions. Please try again.";
+            }
+        }
+
+        async function generateCustomRoadmap() {
+            const display = document.getElementById('roadmap-display');
+            display.innerHTML = `
+                <div class="col-span-3 p-12 glass rounded-3xl text-center">
+                    <div class="loading-shimmer h-48 w-full rounded-2xl mb-4"></div>
+                    <p class="text-yellow-500 font-bold italic">Architecting your custom People OS...</p>
+                </div>
+            `;
+
+            const prompt = `Create a custom 30-60-90 day HR roadmap for Scowtt. 
+            Format as JSON with keys: phase1 (Days 1-30), phase2 (Days 31-60), phase3 (Days 61-90). 
+            Each phase must have a 'title' and a 'bullets' array of 3 specific items. Focus on AI, Scaling, and Culture. DO NOT mention explicit company names.`;
+
+            try {
+                const rawText = await callGemini(prompt + " Output ONLY the JSON string.");
+                let data;
+                try {
+                    data = JSON.parse(rawText.replace(/```json|```/g, ''));
+                } catch (e) {
+                    display.innerHTML = `<div class="col-span-3 p-8 glass rounded-2xl whitespace-pre-line">${rawText}</div>`;
+                    return;
+                }
+
+                display.innerHTML = `
+                    <div class="p-8 glass rounded-2xl roadmap-card border-yellow-500/20">
+                        <div class="bg-accent-gold text-slate-950 font-black text-xs px-3 py-1 inline-block rounded-full mb-4">Phase 1</div>
+                        <h3 class="text-2xl font-bold mb-4">${data.phase1.title}</h3>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            ${data.phase1.bullets.map(b => `<li class="flex gap-3"><i class="fa-solid fa-check text-yellow-500 mt-1"></i> <span>${b}</span></li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="p-8 glass rounded-2xl roadmap-card border-blue-500/20">
+                        <div class="bg-blue-500 text-white font-black text-xs px-3 py-1 inline-block rounded-full mb-4">Phase 2</div>
+                        <h3 class="text-2xl font-bold mb-4">${data.phase2.title}</h3>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            ${data.phase2.bullets.map(b => `<li class="flex gap-3"><i class="fa-solid fa-check text-blue-500 mt-1"></i> <span>${b}</span></li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="p-8 glass rounded-2xl roadmap-card border-purple-500/20">
+                        <div class="bg-purple-500 text-white font-black text-xs px-3 py-1 inline-block rounded-full mb-4">Phase 3</div>
+                        <h3 class="text-2xl font-bold mb-4">${data.phase3.title}</h3>
+                        <ul class="space-y-4 text-slate-400 text-sm">
+                            ${data.phase3.bullets.map(b => `<li class="flex gap-3"><i class="fa-solid fa-check text-purple-500 mt-1"></i> <span>${b}</span></li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            } catch (e) {
+                display.innerHTML = '<div class="col-span-3 p-4 bg-red-500/10 text-red-400 rounded-xl">Error generating roadmap.</div>';
+            }
+        }
+
+        async function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            const container = document.getElementById('chat-messages');
+            const message = input.value.trim();
+            if (!message) return;
+
+            container.innerHTML += `
+                <div class="flex justify-end">
+                    <div class="bg-blue-600 text-white p-4 rounded-2xl rounded-tr-none text-sm max-w-[80%] bot-bubble">
+                        ${message}
+                    </div>
+                </div>
+            `;
+            input.value = '';
+            container.scrollTop = container.scrollHeight;
+
+            const loadingId = 'loading-' + Date.now();
+            container.innerHTML += `
+                <div id="${loadingId}" class="flex justify-start">
+                    <div class="glass p-4 rounded-2xl rounded-tl-none text-sm max-w-[80%] flex gap-3 bot-bubble">
+                        <div class="w-2 h-2 bg-yellow-500 rounded-full animate-bounce"></div>
+                        <div class="w-2 h-2 bg-yellow-500 rounded-full animate-bounce delay-100"></div>
+                        <div class="w-2 h-2 bg-yellow-500 rounded-full animate-bounce delay-200"></div>
+                    </div>
+                </div>
+            `;
+            container.scrollTop = container.scrollHeight;
+
+            try {
+                const response = await callGemini(message);
+                document.getElementById(loadingId).remove();
+                container.innerHTML += `
+                    <div class="flex justify-start">
+                        <div class="glass p-4 rounded-2xl rounded-tl-none text-sm max-w-[80%] flex gap-3 bot-bubble">
+                            <div class="w-6 h-6 rounded-full bg-yellow-500 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-robot text-[10px] text-slate-950"></i>
+                            </div>
+                            <div>${response}</div>
+                        </div>
+                    </div>
+                `;
+            } catch (err) {
+                document.getElementById(loadingId).remove();
+                container.innerHTML += `<div class="text-red-400 text-xs text-center">Connection error. Please try again.</div>`;
+            }
+            container.scrollTop = container.scrollHeight;
+        }
+
+        document.getElementById('chat-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendChatMessage();
+        });
+    </script>
+</body>
+</html>
